@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<link rel="stylesheet" type="text/css" href="css/ckg_rest.css">
+	<link rel="stylesheet" type="text/css" href="css/ckg_register.css">
+</head>
+<body>
+	<div class="login_box">
+		<div class="phone_box">
+			<div class="login_top">
+				<div class="logo_img"></div>
+			</div>
+			<div class="phone_login">
+				<div class="phone_num">
+					<div class="left_A_code">中国 +86</div>
+					<input type="tel" name="tel" value="" placeholder="手机号">
+				</div>
+				<div class="yzm_num">
+					<input type="text" name="text" value="" placeholder="请输入手机验证码" style="padding-left: 0px;">
+					<div class="right_code">获取短信验证码</div>
+				</div>
+			</div>
+			<div class="password_login">
+				<div class="phone_num">
+					<input type="tel" name="tel" value="" placeholder="用户名" style="padding-left: 0px;">
+				</div>
+				<div class="yzm_num">
+					<input type="password" name="password" value="" placeholder="密码" style="padding-left: 0px;">
+				</div>
+			</div>
+			<div class="switch_btn">
+				
+			</div>
+			<div class="login_btn">注册</div>
+		</div>
+		<div class="login_bottom">
+			<span>已有账号 ?</span>
+			<div class="go_rig">
+				<a href="##">登录</a>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="assets/jquery/jquery.min.js"></script>
+<script type="text/javascript">
+	var tel,yzm;
+	$('.yzm_num .right_code').on('click',function(){
+		tel=$('.phone_login .phone_num>input[type="tel"]').val();
+		// console.log(tel)
+		if(!(/^1[34578]\d{9}$/.test(tel))){
+			alert('请输入正确的手机号')
+			return;
+		}
+	})
+	$('.login_btn').on('click',function(){
+		yzm=$('.phone_login .yzm_num>input[type="text"]').val();
+		// console.log(yzm)
+		// (/^1[34578]\d{9}$/.test(tel))
+		if(yzm==''){
+			alert('请输入正确的验证码');
+			return;
+		}else{
+			var divWord=$(this).html();
+			// console.log(divWord)
+			if(divWord=='注册'){
+				$(this).html('');
+				$(this).html('进入周易学院')
+				$('.phone_login').hide();
+				$('.password_login').show();
+			}else{
+				console.log(1111)
+			}
+		}
+	})
+</script>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>找回密码</title>
+	<link rel="stylesheet" type="text/css" href="css/ckg_rest.css">
+	<link rel="stylesheet" type="text/css" href="css/ckg_retrieve.css">
+</head>
+<body>
+	<div class="login_box">
+		<div class="phone_box">
+			<div class="login_top">
+				<div class="logo_img"></div>
+			</div>
+			<!-- 找回密码 -->
+			<div class="phone_yz">
+				<div class="top_title">
+					<div class="line"></div>
+					<div class="title_word">找回密码</div>
+					<div class="line"></div>
+				</div>
+				<div class="input_box">
+					<div class="input_phone">
+						<input type="tel" name="tel" value="" placeholder="输入手机号">
+					</div>
+					<div class="input_yzm">
+						<input type="text" name="text" value="" placeholder="输入手机验证码">
+						<div class="yzm_btn">获取短信验证码</div>
+					</div>
+					<div class="input_yzm hkyz" style="border-color: #d4d4d4;">
+						<div class="verify">
+						    <div id="verify_box">
+							    <div id="verify_xbox">
+								    <div id="btn">
+								    	<img src="images/lllllll.png" />
+								    </div>
+							    </div>
+							    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;按住滑块，拖动到最右边
+						    </div>
+						</div>
+					</div>
+				</div>
+				<div class="next_btn">下一步</div>
+			</div>
+			<!-- 密码重置 -->
+			<div class="password_rest" style="display: none;">
+				<div class="top_title">
+					<div class="line"></div>
+					<div class="title_word">密码重置</div>
+					<div class="line"></div>
+				</div>
+				<div class="input_box">
+					<div class="input_phone">
+						<input type="text" name="text" value="" placeholder="新密码">
+						<div class="cyc_on"></div>
+					</div>
+					<div class="input_yzm">
+						<input type="text" name="text" value="" placeholder="确认密码">
+						<div class="cyc_on"></div>
+					</div>
+				</div>
+				<div class="next_btn" style="margin-top: 60px;">重置</div>
+			</div>
+			<!-- 重置成功 -->
+			<div class="rest_success" style="margin-top: 70px;display: none;">
+				<div class="top_title" style="height: 24px;">
+					<div class="success_icon"></div>
+					<div class="success_word">重置密码成功</div>
+				</div>
+				<div class="next_btn" id="go_login" style="width: 200px;margin:0 auto;margin-top: 35px;">立即登录</div>
+			</div>
+		</div>
+		<div class="login_bottom">
+			<span>还没有账号 ?</span>
+			<div class="go_rig">
+				<a href="##">注册</a>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="assets/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript">
+	$('.next_btn').on('click',function(){
+		var divWord=$(this).html();
+		// console.log(divWord)
+		if(divWord=='下一步'){
+			$('.phone_yz').hide();
+			$('.rest_success').hide();
+			$('.password_rest').show();
+		}else{
+			$('.phone_yz').hide();
+			$('.password_rest').hide();
+			$('.rest_success').show();
+		}
+	})
+
+	$("#go_login").on('click',function(){
+		//登录
+	})
+	//控制小眼睛
+	$('.cyc_on').on('click',function(){
+		if(!$(this).hasClass("cyc_off")){
+			$(this).addClass('cyc_off');
+			$(this).siblings('input').attr('type','password');
+		}else{
+			$(this).removeClass('cyc_off');
+			$(this).siblings('input').attr('type','text');
+		}
+			
+	})
+
+</script>
+</html>
