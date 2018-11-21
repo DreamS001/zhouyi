@@ -1,0 +1,171 @@
+html,body{
+	background: #fff;
+}
+.curriculum{
+	box-shadow: 0px 5px 10px 0px 
+		rgba(0, 0, 0, 0.06);
+}
+.curriculum_title{
+	width: 100%;
+	height: 83px;
+	font-size: 26px;
+	color: #353535;
+	opacity: 0.99;
+	padding: 32px 10px 0 10px;
+	box-sizing: border-box;
+
+}
+.curriculum_title .left_box{
+	width: 160px;
+	float: left;
+}
+.curriculum_title .right_box{
+	width: 280px;
+	height: 34px;
+	background-color: #f3f5f6;
+	border-radius: 17px;
+	float: right;
+	position: relative;
+}
+.curriculum_title .left_box .icon_box{
+	display: inline-block;
+	width: 30px;
+	height: 27px;
+	background: url('../images/index/curr.png') no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+.curriculum_title .right_box input{
+	width: 100%;
+	height: 100%;
+	background-color: #f3f5f6;
+	border-radius: 17px;
+	padding-left: 23px;
+	box-sizing: border-box;
+}
+.curriculum_title .right_box input::-webkit-input-placeholder{
+	font-size: 14px;
+	transform: translate(0, -3px);
+	color: #bb9f87;
+}    /* 使用webkit内核的浏览器 */
+.curriculum_title .right_box input:-moz-placeholder{
+	font-size: 14px;
+	color: #bb9f87;
+}                  /* Firefox版本4-18 */
+.curriculum_title .right_box input::-moz-placeholder{
+	font-size: 14px;
+	color: #bb9f87;
+}                  /* Firefox版本19+ */
+.curriculum_title .right_box input:-ms-input-placeholder{
+	font-size: 14px;
+	color: #bb9f87;
+}   
+.curriculum_title .right_box .icon_seach{
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	background: url('../images/search.png') no-repeat;
+	background-size: contain;
+	background-position: center;
+	position: absolute;
+	top: 7px;
+	right: 20px;
+}
+
+.model{
+	width: 100%;
+	height: 74px;
+	border-top: 1px solid #d2d2d3;
+	border-bottom: 1px solid #f3f3f3;
+	font-size: 14px;
+	color: #333333;
+}
+.model .model_title{
+	display: inline-block;
+	width: 50px;
+	height: 100%;
+	line-height: 74px;
+	font-weight: 600;
+	float: left;
+}
+.model ul{
+	padding: 20px 0;
+	box-sizing: border-box;
+}
+.item{
+	float: left;
+	padding: 11px 10px;
+	box-sizing: border-box;
+	margin-right: 33px;
+	font-size: 14px;
+	color: #555555;
+	cursor: pointer;
+}
+.item:hover{
+	color: #ff9900;
+}
+.item.mActive{
+	background-color: rgba(255,153,0,.2);
+	border-radius: 6px;
+	color: #ff9900;
+}
+.item:last-child{
+	margin-right: 0;
+}
+
+.video_curr{
+	width: 100%;
+}
+.video_container{
+
+}
+.video_item{
+	float: left;
+	width: 24%;
+	height: 250px;
+	margin: 60px 0.5% 0;
+	font-size: 16px;
+	color: #333333;
+	cursor: pointer;
+}
+.video_item img{
+	background-color: #cb7117;
+	border-radius: 6px;
+}
+.video_item:hover img{
+	box-shadow: 0px 2px 10px 0px 
+		rgba(0, 0, 0, 0.2);
+}
+.video_item:hover{
+	color: #ff9900;
+}
+.video_desc{
+	padding: 20px 11px 0;
+	box-sizing: border-box;
+}
+.video_desc .video_title{
+	
+}
+.video_desc .desc_box{
+	margin-top: 10px;
+	width: 100%;
+	height: 35px;
+	font-size: 12px;
+	color: #999999;
+	line-height: 18px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/*设置成弹性盒子 */
+	display: -webkit-box;
+	/*显示的个数 */
+	-webkit-line-clamp: 2;
+	/* 属性规定框的子元素应该被水平或垂直排列。 */
+	-webkit-box-orient: vertical;
+}
+
+.pagination-nick{
+	width: 100%;
+	padding: 80px 0;
+	box-sizing: border-box;
+}

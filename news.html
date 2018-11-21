@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>周易学院</title>
+	<title>咨讯</title>
 	<link href="./favicon.ico" rel="shortcut icon" />
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/ckg_rest.css">
 	<link rel="stylesheet" type="text/css" href="css/ckg_news.css">
+	<link rel="stylesheet" href="css/pagination.css">
 </head>
 <body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
 	<header id="header" class="ckg_header">
@@ -52,7 +53,7 @@
 		<div class="ckg_layout">
 			<div class="news_item clearfix">
 				<div class="left_box">
-					<img src="" alt="">
+					<img src="images/news_img.png" alt="">
 				</div>
 				<div class="right_box">
 					<div class="right_top">
@@ -65,11 +66,93 @@
 						<div class="time">2018-11-05 14:06</div>
 						<div class="cyc">
 							<span class="cyc_img"></span>
-							<span>1234</span>
+							<span style="color: #999999;">1234</span>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="news_item clearfix">
+				<div class="left_box">
+					<img src="images/news_img.png" alt="">
+				</div>
+				<div class="right_box">
+					<div class="right_top">
+						<span>张志哲会长专访稿完整篇</span>
+					</div>
+					<div class="right_moddel">
+						<p>运用广博知识和特色内涵传承易经精髓，他为我国传统文化的神秘文化贡献着毕生才情，树立起一个德高望重师者的形象；情系苍生矢志探索，他在俯瞰尘世万象中破译着万千变化的天地密码，为天人合一的111111和谐生活融入了丰富多彩的元素；无垠爱心...</p>
+					</div>
+					<div class="right_bottom">
+						<div class="time">2018-11-05 14:06</div>
+						<div class="cyc">
+							<span class="cyc_img"></span>
+							<span style="color: #999999;">1234</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="news_item clearfix">
+				<div class="left_box">
+					<img src="images/news_img.png" alt="">
+				</div>
+				<div class="right_box">
+					<div class="right_top">
+						<span>张志哲会长专访稿完整篇</span>
+					</div>
+					<div class="right_moddel">
+						<p>运用广博知识和特色内涵传承易经精髓，他为我国传统文化的神秘文化贡献着毕生才情，树立起一个德高望重师者的形象；情系苍生矢志探索，他在俯瞰尘世万象中破译着万千变化的天地密码，为天人合一的111111和谐生活融入了丰富多彩的元素；无垠爱心...</p>
+					</div>
+					<div class="right_bottom">
+						<div class="time">2018-11-05 14:06</div>
+						<div class="cyc">
+							<span class="cyc_img"></span>
+							<span style="color: #999999;">1234</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="news_item clearfix">
+				<div class="left_box">
+					<img src="images/news_img.png" alt="">
+				</div>
+				<div class="right_box">
+					<div class="right_top">
+						<span>张志哲会长专访稿完整篇</span>
+					</div>
+					<div class="right_moddel">
+						<p>运用广博知识和特色内涵传承易经精髓，他为我国传统文化的神秘文化贡献着毕生才情，树立起一个德高望重师者的形象；情系苍生矢志探索，他在俯瞰尘世万象中破译着万千变化的天地密码，为天人合一的111111和谐生活融入了丰富多彩的元素；无垠爱心...</p>
+					</div>
+					<div class="right_bottom">
+						<div class="time">2018-11-05 14:06</div>
+						<div class="cyc">
+							<span class="cyc_img"></span>
+							<span style="color: #999999;">1234</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="news_item clearfix">
+				<div class="left_box">
+					<img src="images/news_img.png" alt="">
+				</div>
+				<div class="right_box">
+					<div class="right_top">
+						<span>张志哲会长专访稿完整篇</span>
+					</div>
+					<div class="right_moddel">
+						<p>运用广博知识和特色内涵传承易经精髓，他为我国传统文化的神秘文化贡献着毕生才情，树立起一个德高望重师者的形象；情系苍生矢志探索，他在俯瞰尘世万象中破译着万千变化的天地密码，为天人合一的111111和谐生活融入了丰富多彩的元素；无垠爱心...</p>
+					</div>
+					<div class="right_bottom">
+						<div class="time">2018-11-05 14:06</div>
+						<div class="cyc">
+							<span class="cyc_img"></span>
+							<span style="color: #999999;">1234</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="ht-page"></div>
 		</div>
 	</div>
 	
@@ -107,7 +190,31 @@
 </body>
 <script src="assets/jquery/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-	
+<script src="js/pagination.js"></script>
+<script typeof="text/javascript">
+    /*
+     * 定义回掉函数
+     * @param  number:跳转页
+     * */
+    function pageChange(i) {
+        alert("index is :" + i);
+        Pagination.Page($(".ht-page"), i, 10000, 5);
+    }
+
+    /*
+     * 初始化插件
+     * @param  object:翻页容器对象
+     * @param  function:回调函数
+     * */
+    Pagination.init($(".ht-page"), pageChange);
+
+    /*
+    * 首次调用
+    * @param  object:翻页容器对象
+    * @param  number:当前页
+    * @param  number:总页数
+    * @param  number:每页数据条数
+    * */
+    Pagination.Page($(".ht-page"), 0, 10, 5);
 </script>
 </html>

@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>关于我们</title>
+	<title>确认订单</title>
 	<link href="./favicon.ico" rel="shortcut icon" />
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/ckg_rest.css">
-	<link rel="stylesheet" type="text/css" href="css/ckg_about_us.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/ckg_order.css">
 </head>
 <body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
 	<header id="header" class="ckg_header">
@@ -20,7 +21,7 @@
 						<a href="javascript:;" class="">首页</a>
 					</li>
 					<li class="ckg_li">
-						<a href="javascript:;" class="">课程</a>
+						<a href="javascript:;" class="active">课程</a>
 					</li>
 					<li class="ckg_li">
 						<a href="javascript:;" class="">专家</a>
@@ -32,7 +33,7 @@
 						<a href="javascript:;" class="">资讯</a>
 					</li>
 					<li class="ckg_li">
-						<a href="javascript:;" class="active">关于我们</a>
+						<a href="javascript:;" class="">关于我们</a>
 					</li>
 				</ul>
 			</div>
@@ -44,49 +45,63 @@
 		</div>
 	</header><!-- /header -->
 
-	<div class="banner_img">
-		<img src="images/about/about_us.png" alt="">
-	</div>
-	
-	<div class="introduction">
+	<div class="order_box">
 		<div class="ckg_layout">
-			<div class="introduction_title">学院简介</div>
-			<div class="introduction_content">
-				<p>让神秘文化服务于大众，是张志哲教授一直以来坚守的价值取向。近年来，他常常参加一些易经论坛等活动，宣扬易经文化精神，为人们排忧解难。他曾为国际周易联合会作“弘扬风水遗产”题词，又为周易网络学院题写“弘扬周易文化，传承诚信教育”宗旨，赤子情怀令人起敬。</p>
-				<p>在2010年上海世博会讲授时，张志哲教授以“周易与人生”为主题，着重阐述了太极基因、八卦定位、乾坤人生三个问题，精辟的授课不时引起雷鸣般的掌声，同时也引发人们对易文化的慎重思考。张志哲教授还积极与有关部门筹办过上海“中国建筑风水文化与健康地产国际论坛”，论坛主题是建筑风水非物质文化遗产的保护与申报，还倡议成立“周易遗产基金会”，并曾计划在上海建造“周易遗产博物馆”。</p>
-				<p>风水与生命和生活息息相关，可以想像，如果我们没有积极接纳风水学思想，将要走多少弯路和曲路，风水涉及到建筑、美学、生态、水利、气象、宗教、景观等多种领域，揉和了儒、释、道三家之学，贯彻了阴阳太极，五行生克，天人感应的传统思想，实在称得上是奥妙无方。</p>
-			</div>
+			<span class="order_title">确认订单</span>
 		</div>
 	</div>
-
-	<div class="theory">
-		<!-- <<img src="images/about/jxll.png" alt=""> -->
-	</div>
-
-	<div class="contan">
+	<div class="order_content">
 		<div class="ckg_layout">
-			<div class="contan_title">学院简介</div>
-			<div class="contan_conten">
-				<div class="left_box">
-					<div class="item">
-						<p>电话</p>
-						<p>13611628591</p>
+			<div class="mask_box">
+				<div class="goods_tilte">商品信息</div>
+				<div class="goods_desc clearfix">
+					<div>
+						<img src="images/curr/goods.png">
 					</div>
-					<div class="item">
-						<p>邮箱</p>
-						<p>1984557164@qq.com</p>
+					<div class="video_desc">
+						<p>中华民族传统美德</p>
+						<p>视频学习不限期，视频时长<span>24小时17分钟</span>。</p>
 					</div>
-					<div class="item">
-						<p>地址</p>
-						<p>上海市祁连山南路2891弄105号6071室</p>
+					<div class="goods_price">￥299.00</div>
+				</div>
+				<div class="goods_bottom clearfix">
+					<div class="buy_box">
+						<p>共1件商品，商品总金额：<span>￥299.00</span></p>
+						<p>应付：<span style="font-size: 24px;color:#ff0000;margin-left: 42px;">￥299.00</span></p>
+						<div class="buy_btn">去付款</div>
 					</div>
 				</div>
-				<div class="right_box"></div>
+				<div class="payment">
+					<div class="payment_title">支付方式</div>
+					<div class="payment_content">
+						<ul class="payment_ul clearfix">
+							<li class="payment_item active">
+								<img src="images/curr/zfb.png">
+							</li>
+							<li  class="payment_item">
+								<img src="images/curr/wx.png">
+								<span>微信支付</span>
+							</li>
+						</ul>
+					</div>
+					<div class="payment_bottom">
+						<p>应付：<span style="margin-left: 50px;color: #ff0000; ">￥299.00</span></p>
+						<div class="go_buy">立即支付</div>
+					</div>
+				</div>
+				<div class="pay_success">
+					<img src="images/curr/pay_success.png">
+					<p>支付成功</p>
+					<p>5秒后自动跳转</p>
+				</div>
 			</div>
+			<!-- 付款成功 -->
+			<!-- <div class=""></div> -->
 		</div>
 	</div>
-	
-    
+
+
+
 	<footer class="footer">
 		<div class="ckg_layout clearfix">
 			<div class="footer_box">
@@ -121,6 +136,19 @@
 <script src="assets/jquery/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
-	
+	$('.payment_item').on('click',function(){
+		$(this).addClass('active').siblings().removeClass('active');
+	})
+
+	$('.buy_btn').on('click',function(){
+		$('.goods_bottom').hide();
+		$('.pay_success').hide();
+		$('.payment').show();
+	})
+	$('.go_buy').on('click',function(){
+		$('.goods_bottom').hide();
+		$('.payment').hide();
+		$('.pay_success').show();
+	})
 </script>
 </html>

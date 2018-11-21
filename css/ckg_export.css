@@ -1,0 +1,140 @@
+html,body{
+	background: #f9f9f9;
+}
+.expert_box{
+
+}
+.curriculum_title{
+	width: 100%;
+	height: 83px;
+	font-size: 26px;
+	color: #353535;
+	opacity: 0.99;
+	padding: 32px 10px 0 10px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #d2d2d3;
+}
+.curriculum_title .left_box{
+	width: 160px;
+	float: left;
+}
+.curriculum_title .right_box{
+	width: 280px;
+	height: 34px;
+	background-color: #f3f5f6;
+	border-radius: 17px;
+	float: right;
+	position: relative;
+}
+.curriculum_title .left_box .icon_box{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url('../images/index/expert_icon.png') no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+.curriculum_title .right_box input{
+	width: 100%;
+	height: 100%;
+	background-color: #f3f5f6;
+	border-radius: 17px;
+	padding-left: 23px;
+	box-sizing: border-box;
+}
+.curriculum_title .right_box input::-webkit-input-placeholder{
+	font-size: 14px;
+	transform: translate(0, -3px);
+	color: #bb9f87;
+}    /* 使用webkit内核的浏览器 */
+.curriculum_title .right_box input:-moz-placeholder{
+	font-size: 14px;
+	color: #bb9f87;
+}                  /* Firefox版本4-18 */
+.curriculum_title .right_box input::-moz-placeholder{
+	font-size: 14px;
+	color: #bb9f87;
+}                  /* Firefox版本19+ */
+.curriculum_title .right_box input:-ms-input-placeholder{
+	font-size: 14px;
+	color: #bb9f87;
+}   
+.curriculum_title .right_box .icon_seach{
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	background: url('../images/search.png') no-repeat;
+	background-size: contain;
+	background-position: center;
+	position: absolute;
+	top: 7px;
+	right: 20px;
+}
+.expert_list{
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 54px;
+	box-sizing: border-box;
+}
+.expert_list .item{
+	width: 100%;
+	height: 260px;
+	padding: 22px 18px 33px 18px;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+.expert_list .item > div {
+	float: left;
+	height: 100%;
+}
+.expert_list .item .left_box{
+	width: 208px;
+	height: 205px;
+}
+.expert_list .item .left_box img{
+	width: 100%;
+}
+.midle_box{
+	width: 416px;
+	height: 100%;
+	margin-left: 30px;
+}
+.midle_box p{
+	font-size: 20px;
+	color: #222222;
+	margin-top: 50px;
+}
+.midle_box p:last-child{
+	font-size: 16px;
+	line-height: 30px;
+	color: #5c5c5c;
+	margin-top: 20px;
+}
+.expert_list .item .right_box{
+	margin: 48px 0 0 30px;
+}
+.right_box p{
+	font-size: 18px;
+	color: #333333;
+}
+.right_box .kc_ul{
+
+}
+.right_box .kc_ul li{
+	float: left;
+	width: 150px;
+	height: 100px;
+	border-radius: 6px;
+	text-align: center;
+	margin-right: 10px;
+}
+.right_box .kc_ul li img{
+	margin: 10px 0;
+}
+.right_box .kc_ul li p{
+	font-size: 14px;
+	color: #5c5c5c;
+}

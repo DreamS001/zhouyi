@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=0">
+<meta name="format-detection" content="telephone=no" />
+<title>分页</title>
+<link rel="stylesheet" href="css/pagination.css">
+</head>
+<body>
+<div class="ht-page"></div>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+
+<script src="js/pagination.js"></script>
+<script typeof="text/javascript">
+    /*
+     * 定义回掉函数
+     * @param  number:跳转页
+     * */
+    function pageChange(i) {
+        alert("index is :" + i);
+        Pagination.Page($(".ht-page"), i, 10000, 10);
+    }
+
+    /*
+     * 初始化插件
+     * @param  object:翻页容器对象
+     * @param  function:回调函数
+     * */
+    Pagination.init($(".ht-page"), pageChange);
+
+    /*
+    * 首次调用
+    * @param  object:翻页容器对象
+    * @param  number:当前页
+    * @param  number:总页数
+    * @param  number:每页数据条数
+    * */
+    Pagination.Page($(".ht-page"), 0, 100, 10);
+</script>
+</body>
+</html>
