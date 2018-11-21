@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>设置</title>
+	<link href="./favicon.ico" rel="shortcut icon" />
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/ckg_rest.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	<link rel="stylesheet" type="text/css" href="css/personal_set.css">
+</head>
+<body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
+	<header id="header" class="ckg_header">
+		<div class="ckg_layout">
+			<a href="javascript:;">
+				<div class="ckg_logo"></div>
+			</a>
+			<div class="ckg_nav">
+				<ul class="ckg_ul">
+					<li class="ckg_li">
+						<a href="index.html" class="">首页</a>
+					</li>
+					<li class="ckg_li">
+						<a href="课程.html" class="">课程</a>
+					</li>
+					<li class="ckg_li">
+						<a href="专家.html" class="">专家</a>
+					</li>
+					<li class="ckg_li">
+						<a href="forum.html" class="">论坛</a>
+					</li>
+					<li class="ckg_li">
+						<a href="news.html" class="">资讯</a>
+					</li>
+					<li class="ckg_li">
+						<a href="aboutUs.html" class="">关于我们</a>
+					</li>
+				</ul>
+			</div>
+			<div class="ckg_login_logout">
+				<button class="ckg_btn" style="font-size: 16px;">登录</button>
+				<span>/</span>
+				<button class="ckg_btn" style="font-size: 16px;">注册</button>
+			</div>
+		</div>
+	</header><!-- /header -->
+
+	
+	<div class="set_contanier">
+		<div class="ckg_layout clearfix">
+			<div class="set_list">
+				<div class="per_headImg">
+					<img src="images/headrImg.png">
+					<span>这是昵称呀</span>
+				</div>
+				<ul class="set_ul clearfix">
+					<li class="set_item active">
+						<span>修改头像</span>
+						<span>></span>
+					</li>
+					<li class="set_item">
+						<span>个人信息</span>
+						<span>></span>
+					</li>
+				</ul>
+			</div>
+			<div class="right_box">
+				<div class="set_content" style="display: block;">
+					<div class="right_title">更换头像</div>
+					<div class="modify">
+						<div class="now_headImg">
+							<span>当前头像</span>
+							<img src="images/headrImg.png">
+						</div>
+						<div class="modify_headImg">
+							<span>修改头像</span>
+							<img src="images/headrImg.png">
+							<input type="file" name="file" id="file" class="inputfile" /> 
+							<label for="file" class='btn'>上传头像</label> 
+
+							<div class="ok_btn">保存</div>
+						</div>
+					</div>
+				</div>
+				<div class="set_content">
+					<div class="right_title">个人信息</div>
+					<div class="per_name">
+						<label for="text">昵称</label>
+						<input type="text" id="text" name="text" value="" placeholder="请输入昵称">
+					</div>
+					<div class="per_name">
+						<label for="text">性别</label>
+						<input type="text" id="text" name="text" value="" placeholder="请输入性别">
+					</div>
+					<div class="per_name">
+						<label for="text">城市</label>
+						<input type="text" id="text" name="text" value="" placeholder="请输入城市">
+					</div>
+
+					<div class="message_btn">保存</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+
+	<footer class="footer">
+		<div class="ckg_layout clearfix">
+			<div class="footer_box">
+				<ul class="footer_ul clearfix">
+					<li class="footer_li"><a href="javascript:;">网站首页</a></li>
+					<li class="footer_li"><a href="javascript:;">课程</a></li>
+					<li class="footer_li"><a href="javascript:;">专家</a></li>
+					<li class="footer_li"><a href="javascript:;">论坛</a></li>
+					<li class="footer_li"><a href="javascript:;">资讯</a></li>
+					<li class="footer_li"><a href="javascript:;">关于我们</a></li>
+				</ul>
+				<div class="ckg_record">
+					Copyright © 2015 qingful.com All Rights Reserved 豫ICP备16009619号
+				</div>
+			</div>
+			<div class="footer_box footer_right_box">
+				<div class="left_box">
+					<span class="phone_icon"></span>
+					<span>13611628591</span>
+				</div>
+				<div class="right_box" style="margin-top: -60px;">
+					<div style="margin-right: 20px;">关注我们</div>
+					<div class="gzhewm">
+						<img src="images/index/ewm.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+<script src="assets/jquery/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$('.set_item').on('click',function(){
+		$(this).addClass('active').siblings().removeClass('active');
+		$(this).parent().parent().siblings('div').children().eq($(this).index()).show().siblings().hide();
+	})
+</script>
+</html>

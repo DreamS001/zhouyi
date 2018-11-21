@@ -1,3 +1,15 @@
+html,body{
+	position: relative;
+	
+}
+.body{
+	overflow: hidden;
+}
+/*webkit内核*/
+body::-webkit-scrollbar {
+    width:0px;
+    height:0px;
+}
 .ckg_header{
 	width: 100%;
 	height: 80px;
@@ -639,4 +651,24 @@
 }
 #lunbobox ul li.lunbo_active{
 	background:#ff9900;
+}
+
+
+.mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #cb7117;
+	/* display: none; */
+	z-index: 9999;
+	/* overflow: hidden; */
+}
+.mask .tj_box{
+	width: 100%;
+	height: 100%;
+}
+.mask .tj_box img{
+	width: 100%;
 }

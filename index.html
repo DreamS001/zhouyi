@@ -6,9 +6,11 @@
 	<link href="./favicon.ico" rel="shortcut icon" />
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/ckg_rest.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
 	<link rel="stylesheet" type="text/css" href="css/ckg_index.css">
+	<script src="assets/jquery/jquery.min.js"></script>
 </head>
-<body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
+<body class="body" ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
 	<header id="header" class="ckg_header">
 		<div class="ckg_layout">
 			<a href="javascript:;">
@@ -17,29 +19,34 @@
 			<div class="ckg_nav">
 				<ul class="ckg_ul">
 					<li class="ckg_li">
-						<a href="javascript:;" class="active">首页</a>
+						<a href="index.html" class="active">首页</a>
 					</li>
 					<li class="ckg_li">
-						<a href="javascript:;" class="">课程</a>
+						<a href="课程.html" class="">课程</a>
 					</li>
 					<li class="ckg_li">
-						<a href="javascript:;" class="">专家</a>
+						<a href="专家.html" class="">专家</a>
 					</li>
 					<li class="ckg_li">
-						<a href="javascript:;" class="">论坛</a>
+						<a href="forum.html" class="">论坛</a>
 					</li>
 					<li class="ckg_li">
-						<a href="javascript:;" class="">资讯</a>
+						<a href="news.html" class="">资讯</a>
 					</li>
 					<li class="ckg_li">
-						<a href="javascript:;" class="">关于我们</a>
+						<a href="aboutUs.html" class="">关于我们</a>
 					</li>
 				</ul>
 			</div>
-			<div class="ckg_login_logout">
+			<!-- <div class="ckg_login_logout">
 				<button class="ckg_btn" style="font-size: 16px;">登录</button>
 				<span>/</span>
 				<button class="ckg_btn" style="font-size: 16px;">注册</button>
+			</div> -->
+			<div class="per_img_box">
+				<a href="personal.html">
+					<img src="images/headrImg.png">
+				</a>
 			</div>
 		</div>
 	</header><!-- /header -->
@@ -573,11 +580,21 @@
 			</div>
 		</div>
 	</footer>
-
+	<div class="mask">
+		<div class="">
+			<div class="tj_box">
+				<img src="images/tj.gif">
+			</div>
+		</div>
+	</div>
 </body>
-<script src="assets/jquery/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
+
+	setTimeout(function () {
+        $('.body').removeClass('body');
+    }, 6000);
+    $('.mask').fadeOut(6000);
 	
 	$('.tab_ul .tab_li').on("mouseover",function(e) {
           e.preventDefault();
@@ -628,5 +645,7 @@ $("#lunbobox ul li").click(function() {
 
     $(".lunbo .item ").eq(index).fadeIn(500).siblings().fadeOut(); // siblings  找到 兄弟节点(不包括自己）
 });
+
+
 </script>
 </html>

@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/ckg_rest.css">
 	<link rel="stylesheet" type="text/css" href="css/public.css">
 	<link rel="stylesheet" type="text/css" href="css/ckg_curriculum.css">
+	<link rel="stylesheet" href="css/pagination.css">
 </head>
 <body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
 	<header id="header" class="ckg_header">
@@ -18,22 +19,22 @@
 			<div class="ckg_nav">
 				<ul class="ckg_ul">
 					<li class="ckg_li">
-						<a href="javascript:;" class="">首页</a>
+						<a href="index.html" class="">首页</a>
 					</li>
 					<li class="ckg_li">
-						<a href="javascript:;" class="active">课程</a>
+						<a href="课程.html" class="active">课程</a>
 					</li>
 					<li class="ckg_li">
-						<a href="javascript:;" class="">专家</a>
+						<a href="专家.html" class="">专家</a>
 					</li>
 					<li class="ckg_li">
-						<a href="javascript:;" class="">论坛</a>
+						<a href="forum.html" class="">论坛</a>
 					</li>
 					<li class="ckg_li">
-						<a href="javascript:;" class="">资讯</a>
+						<a href="news.html" class="">资讯</a>
 					</li>
 					<li class="ckg_li">
-						<a href="javascript:;" class="">关于我们</a>
+						<a href="aboutUs.html" class="">关于我们</a>
 					</li>
 				</ul>
 			</div>
@@ -166,7 +167,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="pagination-nick"></div>
+			<!-- <div class="pagination-nick"></div> -->
+			<div class="ht-page"></div>
 		</div>
 	</div>
 
@@ -203,7 +205,31 @@
 </body>
 <script src="assets/jquery/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-	
+<script src="js/pagination.js"></script>
+<script typeof="text/javascript">
+    /*
+     * 定义回掉函数
+     * @param  number:跳转页
+     * */
+    function pageChange(i) {
+        // alert("index is :" + i);
+        Pagination.Page($(".ht-page"), i, 10000, 4);
+    }
+
+    /*
+     * 初始化插件
+     * @param  object:翻页容器对象
+     * @param  function:回调函数
+     * */
+    Pagination.init($(".ht-page"), pageChange);
+
+    /*
+    * 首次调用
+    * @param  object:翻页容器对象
+    * @param  number:当前页
+    * @param  number:总页数
+    * @param  number:每页数据条数
+    * */
+    Pagination.Page($(".ht-page"), 0, 50, 4);
 </script>
 </html>

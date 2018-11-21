@@ -1,0 +1,178 @@
+html,body{
+	background: #fff;
+}
+.set_contanier{
+
+}
+.set_contanier >div >div{
+	float: left;
+}
+
+.set_list{
+	width: 200px;
+	height: 526px;
+	padding-top: 50px;
+	box-sizing: border-box;
+	background-color: #f4f4f4;
+	margin-bottom: 284px;
+}
+.set_list .per_headImg{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.set_list .per_headImg img{
+	width: 99px;
+	height: 99px;
+	margin-bottom: 13px;
+}
+.set_list .per_headImg span{
+	font-size: 20px;
+	color: #222222;
+}
+
+.set_list .set_ul{
+	margin-top: 60px;
+}
+.set_list .set_ul .set_item{
+	width: 100%;
+	float: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 44px;
+	padding: 0 18px 0 50px;
+	box-sizing: border-box;
+	font-size: 14px;
+	color: #222222;
+	cursor: pointer;
+	
+} 
+.set_list .set_ul .set_item.active{
+	background-color: #ff9900;
+	color: #ffffff;
+}
+.set_list .set_ul .set_item span:first-child{
+	margin-right: 65px;
+}
+.set_contanier .set_content{
+	display: none;
+}
+
+.set_contanier .set_content {
+
+}
+
+.right_box{
+	width: 78.3%;
+	float: right;
+	padding: 44px 0 0 60px;
+	box-sizing: border-box;
+}
+.set_content{
+	width: 100%;
+}
+
+.set_content .right_title{
+	font-size: 16px;
+	color: #222222;
+	position: relative;
+	border-bottom: 1px solid #dfdfdf;
+	padding-bottom: 25px;
+	box-sizing: border-box;
+}
+.modify{
+	margin-top: 50px;
+	display: flex;
+}
+.now_headImg{
+	width: 240px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.now_headImg span{
+	font-size: 16px;
+	color: #222222;
+}
+.now_headImg img{
+	width: 205px;
+	height: 205px;
+	margin-top: 20px;
+}
+
+.modify_headImg{
+	width: 240px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.modify_headImg span{
+	font-size: 16px;
+	color: #222222;
+}
+.modify_headImg img{
+	width: 205px;
+	height: 205px;
+	margin-top: 20px;
+}
+
+
+.inputfile {
+    opacity: 0;
+
+}
+
+.inputfile {
+   position:absolute;clip:rect(0 0 0 0);
+}
+
+.ok_btn{
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #ff9900;
+	border-radius: 4px;
+	margin-top: 33px;
+	font-size: 16px;
+	color: #ffffff;
+	cursor: pointer;
+}
+.per_name {
+	margin-top: 20px;
+	height: 60px;
+}
+.per_name label{
+	width: 120px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background-color: #f5f5f5;
+	font-size: 16px;
+	color: #222222;
+}
+.per_name input{
+	width: 85.6%;
+	height: 55px;
+	border-bottom: 1px solid #dfdfdf;
+	padding-left: 30px;
+	box-sizing: border-box;
+}
+
+.message_btn{
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background-color: #ff9900;
+	border-radius: 6px;
+	border: solid 1px #ff9900;
+	font-size: 16px;
+	color: #ffffff;
+	margin: 80px 0 0 340px;
+	cursor: pointer;
+}
